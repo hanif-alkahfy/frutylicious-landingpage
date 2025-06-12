@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-0 w-full z-50">
+    <nav className="fixed top-0 left-0 w-full z-50">
       {/* Kontainer utama navbar */}
       <div className="flex items-center justify-between px-4 sm:px-6">
         {/* Hamburger Icon (Mobile Only) */}

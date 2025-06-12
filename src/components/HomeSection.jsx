@@ -2,8 +2,8 @@ import fruitImage from '../assets/fruit.png';
 
 const HomeSection = () => {
   return (
-    <section className="w-screen min-h-screen bg-gradient-to-br from-blue-200 via-teal-100 to-blue-300">
-      <section className="w-full flex justify-center items-center px-4 sm:px-8 pt-24 pb-12">
+    <section className="bg-gradient-to-br from-blue-200 via-teal-100 to-blue-300 pt-20">
+      <section className="flex justify-center items-center px-4 sm:px-8 pt-24 pb-12">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-7xl gap-10">
           
           {/* Kiri: Teks & Tombol */}
