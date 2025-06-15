@@ -6,10 +6,19 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#53BDFF",
+        background: "#EAF7FF",
+        banner: "#B9E4FF",
+        font: "#314161",
+      },
       fontFamily: {
-        quicksand: ['Quicksand','Jost', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
+        jost: ['Jost', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }
