@@ -9,15 +9,15 @@ const Navbar = () => {
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+    const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
-      }
+    if (currentScrollY === 0) {
+        setShowNavbar(true); // Tampilkan navbar hanya saat posisi paling atas
+    } else {
+        setShowNavbar(false); // Sembunyikan di posisi lain
+    }
 
-      lastScrollY = currentScrollY;
+    lastScrollY = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white/25 backdrop-blur-md shadow-sm ${
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
