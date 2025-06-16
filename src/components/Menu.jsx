@@ -9,9 +9,9 @@ const menus = new Array(8).fill({
 
 const Menu = () => {
   return (
-    <section className="w-full bg-[#EAF7FF] py-20 px-1">
-        <div className="max-w-7xl mx-auto text-center mb-12">
-            <p className="text-[#5A96E3] font-medium">our product</p>
+    <section className="w-full bg-[#EAF7FF] py-20 ">
+        <div className="max-w-7xl mx-auto text-center mb-10">
+            <p className="text-[#5A96E3] font-medium mb-3">our product</p>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#314161]">The Most Popular Juices</h2>
         </div>
 
@@ -21,7 +21,7 @@ const Menu = () => {
             {menus.map((menu, index) => (
                 <div
                 key={index}
-                className="bg-[#E6F4FE] rounded-md p-4 flex flex-col items-center shadow-md sm:w-[160px]"
+                className="bg-[#E6F4FE] rounded-md p-4 flex flex-col items-center shadow-md sm:h-[250px] sm:w-[170px]"
                 >
                 <img src={menu.image} alt={menu.title} className="w-24 h-24 object-contain mb-4" />
                 <p className="font-semibold text-[#314161] mb-1">{menu.title}</p>

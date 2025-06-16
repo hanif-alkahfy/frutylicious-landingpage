@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white/25 backdrop-blur-md shadow-sm ${
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
