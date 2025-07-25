@@ -3,7 +3,7 @@ import fruitImage from '../assets/fruit.png';
 
 const Home = () => {
   return (
-    <section className="w-full min-h-screen bg-gradient-to-br from-blue-200 via-teal-100 to-blue-300 pt-20 pb-10 px-6">
+    <section id='home' className="w-full min-h-screen bg-gradient-to-br from-blue-200 via-teal-100 to-blue-300 pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* Image */}
         <motion.div 
@@ -39,8 +39,12 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="w-full sm:w-[150px] h-[50px] sm:h-[50px] bg-[#53BDFF] text-[#FDFDFD] font-extrabold text-base sm:text-xs rounded-[28px] hover:brightness-110 transition">
-                          LIHAT MENU
+              className="w-full sm:w-[150px] h-[50px] sm:h-[50px] bg-[#53BDFF] text-[#FDFDFD] font-extrabold text-base sm:text-xs rounded-[28px] hover:brightness-110 transition"
+              onClick={() => {
+                const menuSection = document.getElementById("menu");
+                menuSection?.scrollIntoView({ behavior: "smooth" });
+              }}>
+              LIHAT MENU
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -48,7 +52,13 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="w-full sm:w-[150px] h-50px] sm:h-[50px] bg-[#FDFDFD] text-[#53BDFF] font-extrabold text-base sm:text-xs rounded-[28px] hover:bg-[#e5f4ff] transition border-2 border-[#53BDFF]">
+              className="w-full sm:w-[150px] h-50px] sm:h-[50px] bg-[#FDFDFD] text-[#53BDFF] font-extrabold text-base sm:text-xs rounded-[28px] hover:bg-[#e5f4ff] transition border-2 border-[#53BDFF]"
+              onClick={() => {
+                window.open(
+                  "https://wa.me/6281226467574?text=Halo%20Frutylicious!%20Saya%20ingin%20memesan%20jus%20segar%20dari%20menu%20kalian.%20Mohon%20informasinya%20ya!",
+                  "_blank"
+                );
+              }}>
               PESAN SEKARANG
             </motion.button>
           </div>

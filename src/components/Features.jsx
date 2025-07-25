@@ -23,7 +23,7 @@ const FeatureItem = ({ icon, title, text, align = 'left' }) => {
 
 const Features = () => {
   return (
-    <section className="w-full bg-[#EAF7FF] py-20 px-4 overflow-hidden">
+    <section id='features' className="w-full bg-[#EAF7FF] py-20 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
 
         {/* Kiri - fitur kiri */}

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#53BDFF] text-black px-6 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-8">
-        {/* Logo & Deskripsi */}
+        {/* Logo & Deskripsi - tampil di semua ukuran */}
         <div>
           <h2 className="text-xl font-bold mb-3">FRUTYLICIOUS</h2>
           <p>
@@ -12,8 +12,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div>
+        <div className="hidden sm:block">
           <h3 className="font-bold mb-3">QUICK LINKS</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="#home">Home</a></li>
@@ -24,8 +23,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Shop */}
-        <div>
+        <div className="hidden sm:block">
           <h3 className="font-bold mb-3">SHOP</h3>
           <ul className="space-y-2 text-sm">
             <li>Juice</li>
@@ -36,8 +34,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Services */}
-        <div>
+        <div className="hidden sm:block">
           <h3 className="font-bold mb-3">SERVICES</h3>
           <ul className="space-y-2 text-sm">
             <li>History</li>
@@ -48,7 +45,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h3 className="font-bold mb-3">CONTACT US</h3>
           <ul className="space-y-3 text-sm">

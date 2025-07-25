@@ -19,8 +19,11 @@ const Navbar = () => {
 
     lastScrollY = currentScrollY;
     };
-
+    
     window.addEventListener('scroll', handleScroll);
+
+    document.documentElement.style.scrollBehavior = 'smooth';
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
